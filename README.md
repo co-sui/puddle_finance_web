@@ -48,3 +48,4 @@ https://github.com/co-sui/puddle_finance_web
 Contract Address
 ---
 0xb8226df4ab8b4afacdfbef6111ec0a09f6fe7c30a9d3fe553666b63f4d8fb1f4
+[Sui Explorer](https://suiexplorer.com/object/0xb8226df4ab8b4afacdfbef6111ec0a09f6fe7c30a9d3fe553666b63f4d8fb1f4?network=testnet)
