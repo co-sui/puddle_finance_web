@@ -344,7 +344,7 @@ export default function WalletComponent() {
                         <Box>
                             <h2 style={{ marginTop: '20px', color: 'deepSkyBlue' }}>Select Puddle</h2>
                             <Select
-                                style={{marginRight: '2rem'}}
+                                style={{ marginRight: '2rem' }}
                                 borderRadius={'2px'}
                                 color='white'
                                 size='md'
@@ -448,8 +448,8 @@ export default function WalletComponent() {
                                 cetusPoolAddress !== ""
                                 &&
                                 <Text marginLeft={"70px"} color={preSwapAmount.includes("Error") ? 'red' : 'gold'}>
-                                {preSwapAmount}
-                            </Text>
+                                    {preSwapAmount}
+                                </Text>
                             }
 
                         </Center>
