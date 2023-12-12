@@ -35,7 +35,7 @@ Operation - Get Rewards
 
 Demo Page
 ---
-https://dapp-ts.vercel.app/
+https://puddle-finance-dapp.vercel.app/
 
 Demo Video
 ---
@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=iEyJUkBA7lk
 
 Dapp git
 ---
-https://github.com/puddle-finance/dapp-ts
+https://github.com/co-sui/puddle_finance_web
 
 Contract Address
 ---
