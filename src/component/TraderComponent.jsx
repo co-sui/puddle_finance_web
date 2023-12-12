@@ -301,10 +301,10 @@ export default function WalletComponent() {
                 setPreSwapAmount("PreSwap Amount : " + preSwapAmount);
             }).catch((e) => {
                 console.log("e = " + e);
-                setPreSwapAmount(e.toString());
+                // setPreSwapAmount("CETUS SDK Error ...");
             });
         } else {
-            setPreSwapAmount("PreSwap Amount : " + 0);
+            // setPreSwapAmount("PreSwap Amount : " + 0);
         }
     }
 
@@ -344,7 +344,7 @@ export default function WalletComponent() {
                         <Box>
                             <h2 style={{ marginTop: '20px', color: 'deepSkyBlue' }}>Select Puddle</h2>
                             <Select
-                                style={{ marginRight: '2rem' }}
+                                style={{marginRight: '2rem'}}
                                 borderRadius={'2px'}
                                 color='white'
                                 size='md'
@@ -445,11 +445,11 @@ export default function WalletComponent() {
                                 </Text>
                             }
                             {
-                                cetusPoolAddress !== ""
+                                cetusPoolAddress !== "" && preSwapAmount
                                 &&
                                 <Text marginLeft={"70px"} color={preSwapAmount.includes("Error") ? 'red' : 'gold'}>
-                                    {preSwapAmount}
-                                </Text>
+                                {preSwapAmount}
+                            </Text>
                             }
 
                         </Center>
