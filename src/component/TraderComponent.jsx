@@ -227,7 +227,7 @@ export default function WalletComponent() {
                 let investArray = [];
                 investMap.set(puddle.puddle.id.id, investArray);
                 puddle_map.set(puddle.puddle.id.id, puddle);
-                let title = ["Type", "Amount", "Cost (SUI)", "Pool Total Supply"];
+                let title = ["Type", "Cost (SUI)", "Amount", "Pool Total Supply"];
                 investArray.push(title);
                 let investsArray = puddle.puddle.investments.invests;
                 for (let investObj of investsArray) {
@@ -241,7 +241,7 @@ export default function WalletComponent() {
                             let balance_amount = Number(investObj.balance_amount) / (10 ** deciamls);
                             console.log("cost_sui = " + cost_sui);
                             console.log("balance_amount = " + balance_amount);
-                            investDetailArray.push(symbol, balance_amount, cost_sui, total_supply);
+                            investDetailArray.push(symbol, cost_sui, balance_amount, total_supply);
                             investArray.push(investDetailArray);
                         });
                     });
