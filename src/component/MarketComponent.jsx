@@ -227,7 +227,7 @@ export default function MarketComponent() {
         <div className="wallet" style={walletStyle}>
             <div style={WalletTableStyle}>
                 {/*左半邊的卡片 */}
-                <h2 style={{ color: 'deepSkyBlue' }}>Sale Shares</h2>
+                <h2 style={{ color: 'deepSkyBlue' }}>Sell Shares</h2>
                 <Center>
                     {
                         userKioskTable.has(wallet.address) ?
@@ -347,7 +347,7 @@ export default function MarketComponent() {
                                                         saleShares(share);
                                                     }
                                                 }}
-                                            >Confirm to Sale</Button>
+                                            >Confirm to Sell</Button>
                                         </Flex>
                                     </Center>
                                 </CardBody>
