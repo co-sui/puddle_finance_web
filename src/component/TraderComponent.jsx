@@ -232,7 +232,7 @@ export default function WalletComponent() {
                 investTableMap.set(puddle.puddle.id.id, investTableArray);
                 investPieMap.set(puddle.puddle.id.id, investPieArray);
                 puddle_map.set(puddle.puddle.id.id, puddle);
-                let title = ["Type", "Current Value", "Exchange Rate", "Cost (SUI)", "Quantity"];
+                let title = ["Type", "Current Value (SUI)", "Exchange Rate", "Cost (SUI)", "Quantity"];
                 investTableArray.push(title);
                 investPieArray.push(title);
                 let investsArray = puddle.puddle.investments.invests;
@@ -247,7 +247,7 @@ export default function WalletComponent() {
                             let quantity = Number(investObj.balance_amount) / (10 ** deciamls);
                             let rate = sqrtPriceX64ToPrice(poolDetail, deciamls, SUI_DECIMALS);
                             let current_value = rate * quantity;
-                            investTableDetailArray.push(symbol, "$ "+(current_value).toString().substring(0, 10), (rate).toString().substring(0, 10), (cost_sui).toString().substring(0, 10), (quantity).toString().substring(0, 10));
+                            investTableDetailArray.push(symbol, ""+(current_value).toString().substring(0, 10), (rate).toString().substring(0, 10), (cost_sui).toString().substring(0, 10), (quantity).toString().substring(0, 10));
                             investPieDetailArray.push(symbol, Number(current_value), Number(rate), Number(cost_sui), Number(quantity));
                             investTableArray.push(investTableDetailArray);
                             investPieArray.push(investPieDetailArray);
