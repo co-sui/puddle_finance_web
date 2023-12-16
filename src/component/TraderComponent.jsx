@@ -245,16 +245,12 @@ export default function WalletComponent() {
                             let deciamls = CoinMetadata.decimals;
                             let cost_sui = Number(investObj.cost_sui) / (10 ** SUI_DECIMALS);
                             let quantity = Number(investObj.balance_amount) / (10 ** deciamls);
-                            let price = sqrtPriceX64ToPrice(poolDetail, deciamls, SUI_DECIMALS);
-                            let rate = (1 / price);
+                            let rate = sqrtPriceX64ToPrice(poolDetail, deciamls, SUI_DECIMALS);
                             let current_value = rate * quantity;
                             investTableDetailArray.push(symbol, "$ "+(current_value).toString().substring(0, 10), (rate).toString().substring(0, 10), (cost_sui).toString().substring(0, 10), (quantity).toString().substring(0, 10));
                             investPieDetailArray.push(symbol, Number(current_value), Number(rate), Number(cost_sui), Number(quantity));
                             investTableArray.push(investTableDetailArray);
                             investPieArray.push(investPieDetailArray);
-                            console.log("symbol = "+symbol);
-                            console.log("price = "+price);
-                            console.log("rate = "+rate);
                         });
                     });
                 }
